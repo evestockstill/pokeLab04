@@ -1,6 +1,6 @@
 import Component from '../Component/Component.js';
 import Header from '../common/Header.js';
-// import SearchOptions from '../PokeExplore/SearchOptions.js';
+import SearchOptions from '../PokeExplore/SearchOptions.js';
 // import Paging from '../PokeExplore/Paging.js';
 import PokeList from '../PokeExplore/PokeList.js';
 import { getPokes } from '../services/poke-api.js';
@@ -11,9 +11,9 @@ class PokeApp extends Component {
         const header = new Header();
         element.prepend(header.renderDOM());
 
-        // const optionsSection = element.querySelector('.poke-filter-container');
-        // const searchOptions = new SearchOptions();
-        // optionsSection.prepend(searchOptions.renderDOM());
+        const optionsSection = element.querySelector('.poke-filter-container');
+        const searchOptions = new SearchOptions();
+        optionsSection.prepend(searchOptions.renderDOM());
 
         const listSection = element.querySelector('.poke-list');
         
@@ -32,15 +32,16 @@ class PokeApp extends Component {
 
     renderHTML() {
         return /*html*/`
-            <div>
-                <main>
+           
+                <main class ="main">
                     <section class='poke-filter-container'>
                     </section>
-                        
+                    <section class="section-b" class="grid">    
                     <section class="poke-list">
                     </section>
+                    </section>
                 </main>
-            </div>
+          
         `;
     }
 }

@@ -5,10 +5,10 @@ class PokeList extends Component {
     renderHTML() {
 
         return /*html*/`
-             <section class="section-b" class="grid">
+            
                 <ul class="all-poke">
-                
-                </section>
+
+               
         `;
     }
     onRender(element) {

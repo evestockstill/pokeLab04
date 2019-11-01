@@ -4,11 +4,14 @@ class SearchOptions extends Component {
 
     renderHTML() {
         return /*html*/`
-        <input class="name-search-input" type="text" placeholder="Pokemon Name" name="search" value="">
+        <form>
+                <fieldset>
+        <section class = "poke-type-filter">
+        <input class="poke-name-filter" type="text" placeholder="Pokemon Name" name="search" value="">
                         <button class="filter">Find Your Pokemon</button>
                     </div>
                     <div class="poke-filter-container">
-                        <input class="filter-attack-input" type="number" name="filter-attack" placeholder="By ID" value="">
+                        <input class="poke-type-filter" type="number" name="filter-attack" placeholder="By ID" value="">
                         <button class="filter">Find Your Pokemon</button>
                     </div>
                     <select class="poke-type-filter">
@@ -34,6 +37,7 @@ class SearchOptions extends Component {
                     </select>
                 </fieldset>
             </form> 
+        </section>
             
         `;
     }
