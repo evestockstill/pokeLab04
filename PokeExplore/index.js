@@ -1,5 +1,5 @@
-import HomeApp from '../home/HomeApp.js';
+import PokeApp from '../PokeExplore/PokeApp.js';
 
-const app = new HomeApp();
+const app = new PokeApp();
 const element = app.renderDOM();
 document.body.prepend(element);

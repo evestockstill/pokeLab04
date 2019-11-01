@@ -12,7 +12,7 @@ class PokeList extends Component {
         const pokes = this.props.pokes;
 
         pokes.forEach(poke => {
-            const props = { poke: poke };
+            const props = { poke };
             const pokeItem = new PokeItem(props);
             const pokeItemDOM = pokeItem.renderDOM();
             element.appendChild(pokeItemDOM);

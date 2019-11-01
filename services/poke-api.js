@@ -1,4 +1,4 @@
-const URL = 'https://alchemy-pokedex.herokuapp.com';
+const URL = 'https://alchemy-pokedex.herokuapp.com/api/pokedex';
 
 export async function getPokes() {
     const response = await fetch(URL);
