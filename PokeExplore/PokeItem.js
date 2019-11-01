@@ -3,8 +3,6 @@ import Component from '../Component/Component.js';
 class PokeItem extends Component {
     renderHTML() {
         const poke = this.props.poke;
-        console.log(poke.url_image);
-
         return `
                     <li>
                         <div class="poke-pic">

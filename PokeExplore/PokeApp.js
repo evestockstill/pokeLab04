@@ -34,7 +34,7 @@ class PokeApp extends Component {
         return /*html*/`
             <div>
                 <main>
-                    <section class="options-section">
+                    <section class='poke-filter-container'>
                     </section>
                         
                     <section class="poke-list">
