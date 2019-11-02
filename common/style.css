@@ -1,7 +1,7 @@
 body {
  margin: 0;
  font-family: 'VT323', monospace;
- background:hsla(197, 100%, 35%, 1);
+ background:hsla(214, 100%, 33%, 1);
  font-size: 1.1rem;
  line-height: 1.5;
  text-align: center;
@@ -30,35 +30,37 @@ select {
      text-shadow: 1px 1px 1px hsla(19, 100%, 35%, 1);
      font-size: 1.5em;
    appearance: none;    
-   background-image: url('../assets/pokemon.jpeg'); 
-   background-position: center ;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url('../assets/pokemon.jpeg');
+ background-position: center ;
  background-repeat: no-repeat;
- background-size: cover; 
+ background-size: cover;
 }
 
 button {
-     height: 1.4rem;
+     height: 1.6rem;
      border-radius: 0.5em;
-     color: black;
+     color: white;
       border: 2px solid black;
-        text-shadow: 1px 1px 1px hsla(19, 100%, 35%, 1);
-    background:  hsla(197, 100%, 35%, 1);
+        text-shadow: 0px 0px 1px black;
+    background: hsla(214, 100%, 33%, 1);
 }
 fieldset {
      background: hsla(19, 100%, 35%, 1);
      border: 15px solid hsla(19, 100%, 35%, 1);
 }
   input, legend{ 
-    height: 1rem;
+    height: 1.2rem;
    font-size: 1em;
    margin: 0.5em;
    text-align: center;
    outline: none;
    border: 2px solid black;
    border-radius: 0.3em;
-   color: black;
-      text-shadow: 1px 1px 1px hsla(19, 100%, 35%, 1);
-   background: hsla(197, 100%, 35%, 1);
+   color: white;
+      text-shadow: 0px 0px 1px hsla(19, 100%, 35%, 1);
+   background:hsla(214, 100%, 33%, 1);
 }
 .section-b ul {
  display: grid;

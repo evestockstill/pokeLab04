@@ -1,5 +1,6 @@
 import Component from '../Component/Component.js';
 import Header from '../common/Header.js';
+// import Footer from  '../common/footer.js';
 import SearchOptions from '../PokeExplore/SearchOptions.js';
 // import Paging from '../PokeExplore/Paging.js';
 import PokeList from '../PokeExplore/PokeList.js';
@@ -22,6 +23,7 @@ class PokeApp extends Component {
 
         const pokeList = new PokeList({ pokes: [] });
         listSection.appendChild(pokeList.renderDOM());
+        
 
         const response = await getPokes();
        
@@ -41,6 +43,7 @@ class PokeApp extends Component {
                     </section>
                     </section>
                 </main>
+                
           
         `;
     }
