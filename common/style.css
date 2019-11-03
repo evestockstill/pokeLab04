@@ -11,10 +11,18 @@ img {
  width: 100%;
  height: auto;
 }
-h2,h3 {
+h2,h6 {
      font-family: 'Press Start 2P', cursive;
  margin: 0;
- padding: 1em 0;
+ padding: 0.5em 0;
+}
+h2 {
+     text-transform: uppercase;
+}
+h6 {
+   font-family: 'Patrick Hand SC', cursive;
+   font-size: 1.5em;
+   font-weight: 600;
 }
 p {
      

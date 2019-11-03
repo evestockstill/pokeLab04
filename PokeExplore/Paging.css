@@ -1,0 +1,28 @@
+p .paging {
+    display: flex;
+    /* align-items: center;
+    justify-content: flex-end; */
+    margin-bottom: 10px;
+}
+
+p .paging button {
+   
+    font-size: 2em;
+    background-color: black;
+    color: white;
+}
+
+p .paging button:disabled {
+    background-color:orange;
+    color: red;
+}
+
+p .paging span {
+    margin: 0 10px;
+}
+.next {
+    height: 100px;
+}
+.prev {
+    height: 100px;
+}

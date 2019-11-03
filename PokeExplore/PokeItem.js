@@ -8,8 +8,8 @@ class PokeItem extends Component {
                         <div>
                             <img src="${poke.url_image}">
                             <div class="poke-cards">
-                                <h3 class="poke-name">${poke.pokemon}</h3>
-                                <h2>They are of the type ${poke.type_1}</h2>
+                                <h2 class="poke-name">${poke.pokemon}</h2>
+                                <h6>They are of the type ${poke.type_1}</h6>
                                 <p>This pokemon has a defense of ${poke.defense} and attack is at ${poke.attack} The egg group is ${poke.egg_group_1}</p>
                         </div>  
                         </div>
