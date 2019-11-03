@@ -2,12 +2,7 @@ import Component from '../Component/Component.js';
 import PokeItem from './PokeItem.js';
 
 class PokeList extends Component {
-    renderHTML() {
-
-        return /*html*/`
-                <ul class="all-poke">       
-        `;
-    }
+    
     onRender(element) {
         const pokes = this.props.pokes;
 
@@ -18,6 +13,11 @@ class PokeList extends Component {
             element.appendChild(pokeItemDOM);
         });
     } 
+    renderHTML() {
+        return /*html*/`
+                <ul class="all-poke">       
+        `;
+    }
 }
 
 

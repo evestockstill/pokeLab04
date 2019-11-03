@@ -1,24 +1,16 @@
-p .paging {
-    display: flex;
-    
-    margin-bottom: 10px;
-}
 
-p .paging button {
+.next button {
    
     font-size: 2em;
     background-color: black;
     color: white;
 }
 
-p .paging button:disabled {
+.next button:disabled {
     background-color:orange;
     color: red;
 }
 
-p .paging span {
-    margin: 0 10px;
-}
 .next {
     height: 100px;
 }
