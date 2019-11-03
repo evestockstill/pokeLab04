@@ -5,10 +5,7 @@ class PokeList extends Component {
     renderHTML() {
 
         return /*html*/`
-            
-                <ul class="all-poke">
-
-               
+                <ul class="all-poke">       
         `;
     }
     onRender(element) {
@@ -20,10 +17,7 @@ class PokeList extends Component {
             const pokeItemDOM = pokeItem.renderDOM();
             element.appendChild(pokeItemDOM);
         });
-
-    }
-
-    
+    } 
 }
 
 
