@@ -5,8 +5,8 @@ class Paging extends Component {
     onRender(element) {
         const prevPokeButton = element.querySelector('.prev');
         const nextPokeButton = element.querySelector('.next');
-        console.log(nextPokeButton);
         if (!prevPokeButton) {
+        //  debugger
             return;
         }
         let page = 1;

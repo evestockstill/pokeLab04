@@ -2,7 +2,7 @@ import Component from '../Component/Component.js';
 import Header from '../common/Header.js';
 import Footer from '../common/footer.js';
 import Paging from '../PokeExplore/Paging.js';
-import SearchOptions from '../PokeExplore/SearchOptions.js';
+import FilterSearchOptions from '../PokeExplore/SearchOptions.js';
 import PokeList from '../PokeExplore/PokeList.js';
 import { getPokes } from '../services/poke-api.js';
 
@@ -13,8 +13,8 @@ class PokeApp extends Component {
         element.prepend(header.renderDOM());
 
         const optionsSection = element.querySelector('.poke-filter-container');
-        const searchOptions = new SearchOptions();
-        optionsSection.prepend(searchOptions.renderDOM());
+        const filtersearchOptions = new FilterSearchOptions();
+        optionsSection.prepend(filtersearchOptions.renderDOM());
 
         const listSection = element.querySelector('.poke-list');
         const paging = new Paging({ totalResults: 0 });
@@ -46,7 +46,7 @@ class PokeApp extends Component {
                 <main class ="main">
                     <section class='poke-filter-container'>
                     </section>
-                    <section class="section-b" class="grid">    
+                    <section class="section-b">   
                     <section class="poke-list">
                    
                     </section>
