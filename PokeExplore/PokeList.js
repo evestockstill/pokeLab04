@@ -10,6 +10,7 @@ class PokeList extends Component {
             const props = { poke };
             const pokeItem = new PokeItem(props);
             const pokeItemDOM = pokeItem.renderDOM();
+            console.log(pokeItem);
             element.appendChild(pokeItemDOM);
         });
     } 

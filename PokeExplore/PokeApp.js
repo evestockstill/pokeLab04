@@ -1,9 +1,9 @@
 import Component from '../Component/Component.js';
 import Header from '../common/Header.js';
 import Footer from '../common/footer.js';
-import Paging from '../PokeExplore/Paging.js';
-import SearchOptions from '../PokeExplore/SearchOptions.js';
-import PokeList from '../PokeExplore/PokeList.js';
+import Paging from './Paging.js';
+import SearchOptions from './SearchOptions.js';
+import PokeList from './PokeList.js';
 import { getPokes } from '../services/poke-api.js';
 
 class PokeApp extends Component {
