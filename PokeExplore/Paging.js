@@ -61,7 +61,7 @@ class Paging extends Component {
         }
         const lastPokePage = Math.ceil(totalResults / pokePerPage);
         return /*html*/`
-    <section class="page-results">
+    <section class="buttons">
                 <button class="prev" ${page === 1 ? 'disabled' : ''}>◀</button>
                 <span>Pokémon ${page} of ${lastPokePage}</span>
                 <button class="next" ${page === lastPokePage ? 'disabled' : ''}>▶</button>

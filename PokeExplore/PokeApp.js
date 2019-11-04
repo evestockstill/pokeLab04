@@ -25,7 +25,6 @@ class PokeApp extends Component {
 
         const footer = new Footer();
         listSection.appendChild(footer.renderDOM());
-       
         const loadPokes = async() => {
             const response = await getPokes();
             const pokes = response.results;
@@ -46,8 +45,7 @@ class PokeApp extends Component {
                     <section class='poke-filter-container'>
                     </section>
                     <section class="section-b">   
-                    <section class="poke-list">
-                   
+                    <section class="poke-list"> 
                     </section>
                     </section>
                 </main>    
