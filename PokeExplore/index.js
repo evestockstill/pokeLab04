@@ -1,5 +1,5 @@
-import PokeApp from '../PokeExplore/PokeApp.js';
+import PokeApp from './PokeApp.js';
 
-const app = new PokeApp();
-const element = app.renderDOM();
+const pokeApp = new PokeApp();
+const element = pokeApp.renderDOM();
 document.body.prepend(element);

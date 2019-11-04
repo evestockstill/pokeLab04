@@ -14,7 +14,7 @@ class HomeApp extends Component {
                 
                 <main>
                     <p>
-                        <a href="./poke.html">Find your Pokemon</a>
+                        <a href="./poke.html">PokéDex</a>
                     </p>
                 </main>
             </div>

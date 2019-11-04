@@ -10,7 +10,7 @@ class SearchOptions extends Component {
             const pokeQueryString = window.location.hash.slice(1);
             const searchParams = new URLSearchParams(pokeQueryString);
 
-            pokeSearchInput.value = searchParams.get('s') || '';
+            pokeSearchInput.value = searchParams.get('name') || '';
 
             const pokeName = searchParams.get('name');
             if (pokeName) {
@@ -24,7 +24,7 @@ class SearchOptions extends Component {
         //     onFilter(select.value);
         //     onFilter: (pokeKey) => {
         //         let filteredPoke = null;
-        //         if (!animalKey) {
+        //         if (!pokeKey) {
         //             filteredPoke = pokes;
         //         }
         //         else {
@@ -45,7 +45,7 @@ class SearchOptions extends Component {
             const searchParams = new URLSearchParams(pokeQueryString);
 
             searchParams.set('type', formData.get('type'));
-            searchParams.set('s', formData.get('search'));
+            searchParams.set('search', formData.get('search'));
             searchParams.set('page', 1);
             window.location.hash = searchParams.toString();
         });
