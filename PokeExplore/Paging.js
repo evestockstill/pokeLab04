@@ -54,11 +54,12 @@ class Paging extends Component {
         else {
             page = parsedPokePage;
         }
-        if (!totalResults) {
+        if (totalResults === 0) {
             return /*html*/`
                 <section class="page-results">There are no Pokémon with that criteria!</section>
             `;
         }
+
         const lastPokePage = Math.ceil(totalResults / pokePerPage);
         return /*html*/`
     <section class="buttons">
