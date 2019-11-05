@@ -10,17 +10,16 @@ test('renders html from data', assert => {
     };
 
     const expected = /*html*/`
-        
-                    <li class="poke-list">
-                        <div>
-                            <img src="${poke.url_image}">
-                            <div class="poke-cards">
-                                <h3 class="poke-name">${poke.pokemon}</h3>
-                                <h2>They are of the type ${poke.type_1}</h2>
-                                <p>This Pokémon has a defense of ${poke.defense} and attack is at ${poke.attack} The egg group is ${poke.egg_group_1}</p>
-                        </div>  
-                        </div>
-                    </li>
+          <li class="poke-item">
+    <div>
+    <a href="http://assets.pokemon.com/assets/${poke.id}" target="_blank"></a>
+        <img src="${poke.url_image}" alt="${poke.id}>
+            <div class="poke-cards">
+                <h2 class="poke-name">${poke.pokemon}</h2>
+                </div>
+                </div>
+                </li>
+
     `;
 
     // act

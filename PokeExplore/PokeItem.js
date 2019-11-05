@@ -10,11 +10,15 @@ class PokeItem extends Component {
         return `
         <li class="poke-item">
     <div>
-    <a href="http://assets.pokemon.com/assets/${poke.id}" target="_blank"> </a>
-        <img src="${image}" alt="${poke.id}
+    <a href="http://assets.pokemon.com/assets/${poke.id}" target="_blank"></a>
+        <img src="${image}" alt="${poke.id}>
             <div class="poke-cards">
                 <h2 class="poke-name">${poke.pokemon}</h2>
-                <h6>They are of the type ${poke.type_1}</h6>
+                </div>
+                </div>
+                </li>
+
+                
         `;
     }
 }
