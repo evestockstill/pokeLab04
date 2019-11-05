@@ -5,15 +5,13 @@
     background-color: black;
     color: white;
 }
+button {
+    outline: none;
+}
 
 .next button:disabled {
-    background-color:orange;
+    background-color:white;
     color: red;
 }
 
-.next {
-    height: 100px;
-}
-.prev {
-    height: 100px;
-}
+/* 
