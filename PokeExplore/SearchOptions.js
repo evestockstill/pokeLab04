@@ -20,6 +20,7 @@ class SearchOptions extends Component {
             const pokeQueryString = window.location.hash.slice(1);
             const searchParams = new URLSearchParams(pokeQueryString);
             searchParams.set('pokemon', formData.get('search'));
+
             searchParams.set('page', 1);
             window.location.hash = searchParams.toString();
         });

@@ -14,6 +14,7 @@ class Paging extends Component {
             const pokeQueryString = window.location.hash.slice(1);
             const searchParams = new URLSearchParams(pokeQueryString);
             const parsedPokePage = parseInt(searchParams.get('page'));
+            
             if (isNaN(parsedPokePage)) {
                 page = 1;
             }
@@ -30,6 +31,7 @@ class Paging extends Component {
             const pokeQueryString = window.location.hash.slice(1);
             const searchParams = new URLSearchParams(pokeQueryString);
             searchParams.set('page', page + increment);
+            
             window.location.hash = searchParams.toString();
         }
         prevPokeButton.addEventListener('click', () => {
@@ -41,7 +43,7 @@ class Paging extends Component {
         });
     }
     renderHTML() {
-        const pokePerPage = 10;
+        const pokePerPage = 20;
         const totalResults = this.props.totalResults;
         const pokeQueryString = window.location.hash.slice(1);
         const searchParams = new URLSearchParams(pokeQueryString);
@@ -56,7 +58,7 @@ class Paging extends Component {
         }
         if (totalResults === 0) {
             return /*html*/`
-                <section class="page-results">There are no Pokémon with that criteria!</section>
+                <section class="paging">There are no Pokémon with that criteria!</section>
             `;
         }
 
