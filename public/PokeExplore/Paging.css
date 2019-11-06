@@ -1,0 +1,17 @@
+
+.next button {
+   
+    font-size: 2em;
+    background-color: black;
+    color: white;
+}
+button {
+    outline: none;
+}
+
+.next button:disabled {
+    background-color:white;
+    color: red;
+}
+
+/* 
